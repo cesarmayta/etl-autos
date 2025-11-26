@@ -7,7 +7,7 @@ from tasks.load import load
 @flow
 def main():
     data = extract()
-    #print(f'extraidos {len(data)} registros')
+    print(f'extraidos {len(data)} registros')
     #print(data[0])
     data_transform = transform(data)
     #print(data_transform.columns)

@@ -26,11 +26,11 @@ def extract():
         total_paginas = int(match.group(1)) if match else 1
         print(f'Número total de páginas: {total_paginas}')
 
-    for pagina in range(1, total_paginas +1):
-        URL = f'{URL}?page={pagina}'
-        print(f'Conectando a la página {pagina}...')
+    for pagina in range(1, total_paginas + 1):
+        URL_PAGE = f'{URL}?page={pagina}'
+        print(f'Conectando a la página {URL_PAGE}...')
         # Realiza la solicitud HTTP
-        response = requests.get(URL,headers=headers)
+        response = requests.get(URL_PAGE,headers=headers)
         if response.status_code == 200:
             soup = BeautifulSoup(response.content,'html.parser')
             autos = soup.find_all("article", class_="c-results")
