@@ -33,7 +33,7 @@ def load(data_df):
     #agregar columna de fecha de carga
     df['fecha'] = pd.Timestamp.now()
     # Cargar el DataFrame en la tabla de la base de datos
-    df.to_sql('tbl_auto_raw_taller', engine, if_exists='replace', index=False)
+    df.to_sql('tbl_autos', engine, if_exists='replace', index=False)
     print("Datos cargados correctamente en la base de datos.")
     resultado = len(df)
 

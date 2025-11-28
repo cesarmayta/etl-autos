@@ -26,6 +26,7 @@ def extract():
         total_paginas = int(match.group(1)) if match else 1
         print(f'Número total de páginas: {total_paginas}')
 
+    #total_paginas = 1
     for pagina in range(1, total_paginas + 1):
         URL_PAGE = f'{URL}?page={pagina}'
         print(f'Conectando a la página {URL_PAGE}...')
