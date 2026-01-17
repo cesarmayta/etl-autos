@@ -9,8 +9,8 @@ def extract():
     extract_data = []
     
     #URL = "https://neoauto.com/venta-de-autos-nuevos"
-    #URL = "https://neoauto.com/venta-de-autos-seminuevos"
-    URL = "https://neoauto.com/venta-de-autos"
+    URL = "https://neoauto.com/venta-de-autos-seminuevos"
+    #URL = "https://neoauto.com/venta-de-autos"
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
